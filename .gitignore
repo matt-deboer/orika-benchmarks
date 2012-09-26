@@ -1,11 +1,11 @@
 *.class
-*/.settings
-*/.settings/*
-*/target
-*/target/
-*/target/*
-*/target/**/*.*
-
+/.settings
+/.settings/*.*
+/target
+/target/
+/target/*
+/target/**/*.*
+results.json
 
 # Package Files #
 *.jar
