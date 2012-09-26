@@ -17,7 +17,9 @@ import com.inspiresoftware.lib.dto.geda.benchmark.domain.Person;
 import com.inspiresoftware.lib.dto.geda.benchmark.dto.PersonDTO;
 
 /**
- *
+ * This is an update to the GeDA benchmark for the ModelMapperMapper mapper,
+ * where the mapping is performed on an already instantiated object
+ * (the same as done by GeDA)
  */
 public class ModelMapperMapper implements Mapper {
 

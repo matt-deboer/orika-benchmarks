@@ -20,7 +20,8 @@ import com.inspiresoftware.lib.dto.geda.benchmark.dto.AddressDTO;
 import com.inspiresoftware.lib.dto.geda.benchmark.dto.PersonDTO;
 
 /**
- * 
+ * This is a configuration of Orika which uses a bound mapper,
+ * and  containsCycles==false
  */
 public class OrikaNonCyclicMapper implements Mapper {
 

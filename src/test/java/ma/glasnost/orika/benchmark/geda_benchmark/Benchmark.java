@@ -12,7 +12,7 @@ package ma.glasnost.orika.benchmark.geda_benchmark;
 import ma.glasnost.orika.benchmark.geda_benchmark.dozer.DozerBasicMapper;
 import ma.glasnost.orika.benchmark.geda_benchmark.modelmapper.ModelMapperMapper;
 import ma.glasnost.orika.benchmark.geda_benchmark.orika.BoundOrikaMapper;
-import ma.glasnost.orika.benchmark.geda_benchmark.orika.GeneralOrikaMapper;
+import ma.glasnost.orika.benchmark.geda_benchmark.orika.OrikaMapper;
 import ma.glasnost.orika.benchmark.geda_benchmark.orika.OrikaNonCyclicMapper;
 
 import com.google.caliper.Param;
@@ -39,6 +39,8 @@ import com.inspiresoftware.lib.dto.geda.benchmark.support.manual.ManualBasicMapp
  *     Also, a return type is needed (see the Caliper docs), otherwise
  *     compiler can just factor out work done which doesn't produce a 
  *     result.
+ *     In this case, it seems like this was only skewing the JAVA_MANUAL
+ *     numbers (making them appear 1000x faster than reality)
  *     
  *   * ModelMapper, Dozer, and Orika mappers were all changed so that
  *     they were mapping a pre-instantiated instance of the destination
@@ -61,7 +63,7 @@ public class Benchmark extends SimpleBenchmark {
         JAVA_MANUAL(new ManualBasicMapper()),
         ORIKA_NOCYCLES(new OrikaNonCyclicMapper()),
         ORIKA_BOUND(new BoundOrikaMapper()),
-        ORIKA(new GeneralOrikaMapper()),
+        ORIKA(new OrikaMapper()),
         GEDA(new GeDABasicMapper()),
         MODELMAPPER(new ModelMapperMapper()),
         DOZER(new DozerBasicMapper())

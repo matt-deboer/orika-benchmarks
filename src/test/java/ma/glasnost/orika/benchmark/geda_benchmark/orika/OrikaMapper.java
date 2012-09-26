@@ -21,17 +21,15 @@ import com.inspiresoftware.lib.dto.geda.benchmark.dto.AddressDTO;
 import com.inspiresoftware.lib.dto.geda.benchmark.dto.PersonDTO;
 
 /**
- * .
- * <p/>
- * User: denispavlov
- * Date: Sep 17, 2012
- * Time: 12:04:50 PM
+ * This is an update to the GeDA benchmark for the OrikaMapper mapper,
+ * where the mapping is performed on an already instantiated object
+ * (the same as done by GeDA)
  */
-public class GeneralOrikaMapper implements Mapper {
+public class OrikaMapper implements Mapper {
 
     private MapperFacade mapper;
     
-    public GeneralOrikaMapper() {
+    public OrikaMapper() {
         final MapperFactory factory = new DefaultMapperFactory.Builder().compilerStrategy(new EclipseJdtCompilerStrategy())
                 .build();
         factory.registerClassMap(factory.classMap(Address.class, AddressDTO.class).
