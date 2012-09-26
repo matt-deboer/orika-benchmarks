@@ -1,4 +1,4 @@
 orika-benchmarks
 ================
 
-benchmarks for orika bean mapper
+Benchmarks for orika bean mapper

@@ -1,4 +1,11 @@
 *.class
+*/.settings
+*/.settings/*
+*/target
+*/target/
+*/target/*
+*/target/**/*.*
+
 
 # Package Files #
 *.jar
