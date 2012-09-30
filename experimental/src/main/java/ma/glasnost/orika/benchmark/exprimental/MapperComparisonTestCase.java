@@ -1,4 +1,4 @@
-package ma.glasnost.orika.benchmark;
+package ma.glasnost.orika.benchmark.exprimental;
 
 import static org.junit.Assert.assertTrue;
 
@@ -10,9 +10,9 @@ import ma.glasnost.orika.BoundMapperFacade;
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
 import ma.glasnost.orika.OrikaSystemProperties;
-import ma.glasnost.orika.benchmark.TestClasses.One;
-import ma.glasnost.orika.benchmark.TestClasses.Parent;
-import ma.glasnost.orika.benchmark.TestClasses.Two;
+import ma.glasnost.orika.benchmark.exprimental.TestClasses.One;
+import ma.glasnost.orika.benchmark.exprimental.TestClasses.Parent;
+import ma.glasnost.orika.benchmark.exprimental.TestClasses.Two;
 import ma.glasnost.orika.benchmark.util.BenchmarkAssert;
 import ma.glasnost.orika.benchmark.util.BenchmarkAssert.MetricType;
 import ma.glasnost.orika.impl.DefaultMapperFactory;

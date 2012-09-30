@@ -5,7 +5,7 @@
     
     <groupId>ma.glasnost.orika</groupId>
     <artifactId>orika-benchmarks</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     
     <name>Orika - benchmarks</name>
 
@@ -22,7 +22,7 @@
     </organization>
 
     <properties>
-        <orika.version>1.2.3-SNAPSHOT</orika.version>
+        <orika.version>1.3.0-SNAPSHOT</orika.version>
         <dozer.version>5.3.2</dozer.version>
         <geda.version>2.0.3</geda.version>
         <modelmapper.version>0.5.0</modelmapper.version>

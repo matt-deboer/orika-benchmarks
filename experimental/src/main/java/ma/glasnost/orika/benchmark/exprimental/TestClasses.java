@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ma.glasnost.orika.benchmark;
+package ma.glasnost.orika.benchmark.exprimental;
 
 import java.util.ArrayList;
 import java.util.List;
